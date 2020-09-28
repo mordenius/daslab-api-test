@@ -1,7 +1,7 @@
 # DasLab backend test
 
 Here is a simple backend test to be part of the DasLab backend/API team.
-This test should not take more than 1h to complete.
+You do not need to finish the assigment, take about 1h if you don't get to the end dont worry, just skip to task 3 and give your opinion and we can discuss where you got and blockers during the interview.
 
 ## Test paramters
 
