@@ -22,5 +22,14 @@ export const routes = [
   "GET /users auth.mustBeAdmin users.list",
   "GET /users/:id auth.mustBeUser users.getById",
 
+  "GET /users/:id/testingLocations auth.mustBeUser testingLocations.list",
+  "GET /users/:id/testingLocations/:locationId auth.mustBeUser testingLocations.getById",
+  "POST /users/:id/testingLocations auth.mustBeUser testingLocations.create",
+  "PUT /users/:id/testingLocations/:locationId auth.mustBeUser testingLocations.userUpdate",
+  "DELETE /users/:id/testingLocations/:locationId auth.mustBeUser testingLocations.userRemove",
+
+  "GET /testingLocations auth.mustBeAdmin testingLocations.adminList",
+  "GET /testingLocations/:locationId auth.mustBeAdmin testingLocations.getById",
+
   "GET /* app.notFound",
 ];
