@@ -1,5 +1,6 @@
 import { Entity, Index, PrimaryGeneratedColumn, OneToMany, CreateDateColumn, UpdateDateColumn, Column } from "typeorm";
 import { Role } from "./role";
+import { TestingLocation } from "./testingLocation";
 
 @Entity()
 export class User {
@@ -22,6 +23,9 @@ export class User {
 
     @OneToMany(roles => Role, role => role.user)
     roles: Role[];
+
+    @OneToMany(testingLocations => TestingLocation, testingLocation => testingLocation.user)
+    testingLocations: TestingLocation[];
 
     @Column({ default: 'en' })
     language: string;
